@@ -117,14 +117,17 @@ pre .headings {
     color: grey;
 }
 
+/* Your existing CSS code */
+
 /* Media Queries */
 @media only screen and (max-width: 768px) {
     nav {
-        padding: 10px 20px; /* Adjust padding for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
     }
 
     nav .logo a {
         width: auto; /* Allow logo to adjust width */
+        font-size: 25px; /* Decrease font size for logo */
     }
 
     nav ul li a {
@@ -132,7 +135,7 @@ pre .headings {
     }
 
     nav .link .one li a {
-        font-size: 16px; /* Decrease font size for link items */
+        font-size: 14px; /* Decrease font size for link items */
     }
 
     section {
@@ -140,17 +143,17 @@ pre .headings {
     }
 
     p {
-        margin-left: 10%; /* Adjust margin for paragraphs */
+        margin-left: 5%; /* Adjust margin for paragraphs */
         font-size: 30px; /* Decrease font size for paragraphs */
     }
 
     pre {
-        margin-left: 10%; /* Adjust margin for preformatted text */
+        margin-left: 5%; /* Adjust margin for preformatted text */
         font-size: medium; /* Decrease font size for preformatted text */
     }
 
     .sports {
-        margin-left: 10%; /* Adjust margin for sports section */
+        margin-left: 5%; /* Adjust margin for sports section */
         font-size: 20px; /* Decrease font size for sports section */
     }
 
