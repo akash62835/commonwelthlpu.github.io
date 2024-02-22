@@ -177,3 +177,54 @@ pre{
     font-size: larger;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+/* Your existing CSS code */
+
+/* Media Query for Smaller Screens */
+@media only screen and (max-width: 768px) {
+    nav {
+        padding: 8px 20px; /* Adjust padding for smaller screens */
+    }
+
+    nav .logo a {
+        font-size: 28px; /* Slightly decrease font size for logo */
+    }
+
+    nav ul li a {
+        font-size: 12px; /* Decrease font size for navigation items */
+    }
+
+    nav .link .one li a {
+        font-size: 14px; /* Decrease font size for link items */
+    }
+
+    section {
+        height: 300px; /* Adjust section height for smaller screens */
+    }
+
+    .place {
+        font-size: 30px; /* Maintain font size for place */
+    }
+ 
+    .two {
+        padding-left: 10%; /* Maintain padding for the list */
+    }
+
+    .two li a {
+        font-size: 18px; /* Slightly decrease font size for list items */
+    }
+
+    .grid {
+        padding: 20px; /* Adjust padding for the grid */
+        margin: 30px; /* Slightly decrease margin for the grid */
+    }
+
+    img {
+        height: 200px; /* Decrease image height for smaller screens */
+        width: 100%; /* Make images fill the container width */
+    }
+
+    .countries {
+        font-size: medium; /* Maintain font size for countries */
+    }
+}
+
