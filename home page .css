@@ -1,9 +1,10 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-nav{
+
+nav {
     position: fixed;
     top: 0px;
     left: 0;
@@ -11,30 +12,29 @@ nav{
     height: 100px;
     padding: 10px 90px;
     box-sizing: border-box;
-    background: rgba(0,0,0,0.6);
- 
- 
+    background: rgba(0, 0, 0, 0.6);
 }
-nav .logo a{
+
+nav .logo a {
     padding: 5px 5px;
     height: 100px;
     float: left;
     color: #fff;
-    width:200px;
+    width: 200px;
     font-size: 35px;
     text-align: center;
     text-decoration: none;
-
 }
-nav ul{
+
+nav ul {
     list-style: none;
     float: right;
-    margin:0;
+    margin: 0;
     padding: 0;
     display: flex;
 }
 
-nav ul li a{
+nav ul li a {
     padding: 5px 5px;
     color: #fff;
     width: 10px;
@@ -42,21 +42,22 @@ nav ul li a{
     bottom: 30px;
     text-decoration: none;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     background-color: black;
     border-radius: 10px;
 }
-nav ul li a img{
+
+nav ul li a img {
     line-height: 80px;
     color: #fff;
     padding: 5px 5px;
     height: 20px;
     width: 20px;
     float: right;
-
 }
 
-nav .link .one li a{
+nav .link .one li a {
     line-height: 80px;
     color: #fff;
     padding: 12px 30px;
@@ -65,49 +66,96 @@ nav .link .one li a{
     font-weight: bold;
     text-transform: uppercase;
 }
-nav .link .one li a:hover{
-    background-color:rgba(0,0,0,0.6);
-    border-radius: 10px;
 
+nav .link .one li a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
 }
-section{
+
+section {
     width: 100%;
     height: 350px;
     background: url(assets/1.jpeg);
     background-size: cover;
     background-position: center;
 }
- .place{
+
+.place {
     font-size: 50px;
     text-align: center;
     width: 100%;
-    background-color: rgb(0,191,255);
+    background-color: rgb(0, 191, 255);
     color: #fff;
 }
-p{
-    
-    margin-left:30%;
-   font-size: 50px;
-   font-style: normal;
-   font-family: 'Courier New', Courier, monospace;
-   color:rgb(18, 145, 208);
-   font-weight: bolder;
 
+p {
+    margin-left: 30%;
+    font-size: 50px;
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(18, 145, 208);
+    font-weight: bolder;
 }
-pre{
+
+pre {
     font-family: comic sans-serif;
     text-align: justify;
     margin-left: 20%;
     font-size: larger;
 }
- .sports{
+
+.sports {
     margin-left: 22.7%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
-    color:black;
+    color: black;
 }
-pre .headings{
+
+pre .headings {
     font-weight: bolder;
     margin-left: 3%;
-    color:grey;
+    color: grey;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    nav {
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+
+    nav .logo a {
+        width: auto; /* Allow logo to adjust width */
+    }
+
+    nav ul li a {
+        font-size: 12px; /* Decrease font size for navigation items */
+    }
+
+    nav .link .one li a {
+        font-size: 16px; /* Decrease font size for link items */
+    }
+
+    section {
+        height: 200px; /* Adjust section height for smaller screens */
+    }
+
+    p {
+        margin-left: 10%; /* Adjust margin for paragraphs */
+        font-size: 30px; /* Decrease font size for paragraphs */
+    }
+
+    pre {
+        margin-left: 10%; /* Adjust margin for preformatted text */
+        font-size: medium; /* Decrease font size for preformatted text */
+    }
+
+    .sports {
+        margin-left: 10%; /* Adjust margin for sports section */
+        font-size: 20px; /* Decrease font size for sports section */
+    }
+
+    pre .headings {
+        margin-left: 3%; /* Adjust margin for headings within preformatted text */
+        font-size: medium; /* Decrease font size for headings within preformatted text */
+    }
 }
